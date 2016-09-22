@@ -1,11 +1,16 @@
 # AnalyticsWebpackPlugin
 Plugin using GA to Report Webpack Statistics
 
+## Install
+`npm install analytics-webpack-plugin --save-dev`
+
 ## Usage
 
 **webpack.config.js**
 
 ```javascript
+var AnalyticsWebpackPlugin = require('analytics-webpack-plugin');
+
 
 module.exports = {
   plugins: [
