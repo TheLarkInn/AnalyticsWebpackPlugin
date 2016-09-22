@@ -1,0 +1,22 @@
+{
+  "name": "analytics-webpack-plugin",
+  "version": "0.0.0",
+  "description": "Plugin using GA to Report Webpack Statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLarkInn/AnalyticsWebpackPlugin.git"
+  },
+  "author": "Sean Larkin <sean.larkin@cuw.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheLarkInn/AnalyticsWebpackPlugin/issues"
+  },
+  "homepage": "https://github.com/TheLarkInn/AnalyticsWebpackPlugin#readme",
+  "devDependencies": {
+    "insight": "^0.8.3"
+  }
+}
