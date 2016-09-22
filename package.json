@@ -1,6 +1,6 @@
 {
   "name": "analytics-webpack-plugin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Plugin using GA to Report Webpack Statistics",
   "main": "index.js",
   "scripts": {
