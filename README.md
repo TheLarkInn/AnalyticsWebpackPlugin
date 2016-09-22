@@ -2,10 +2,14 @@
 Plugin using GA to Report Webpack Statistics
 
 ## Usage
-```
-const config = {
+
+**webpack.config.js**
+
+```javascript
+
+module.exports = {
   plugins: [
-    new AnalyticsWebpackPlugin({analyticsId: 'UA-XXXXXXXX-X'}),
+    new AnalyticsWebpackPlugin({analyticsId: 'UA-XXXXXXXX-X'})
   ]
 };
 ```
