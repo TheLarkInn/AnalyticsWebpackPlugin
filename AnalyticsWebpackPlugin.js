@@ -14,12 +14,12 @@ AnalyticsWebpackPlugin.prototype.apply = function(compiler) {
       pkg: pkg
   });
 
-  if (insight.optOut === undefined) {
-    insight.askPermission();
-  }
-
   compiler.plugin('run', function(comp, cb) {
-
+    if (insight.optOut === undefined) {
+      insight.askPermission();
+      cb();
+    }
+    
     insight.track('plugin','compiler','run');
     //track loaders used
     comp.options.module.loaders.forEach((loaderObj) => {
@@ -29,10 +29,14 @@ AnalyticsWebpackPlugin.prototype.apply = function(compiler) {
     });
 
     // debugger;
-    cb();
+    cb(); 
   });
 
   compiler.plugin('watch-run', function(watching, cb) {
+    if (insight.optOut === undefined) {
+      insight.askPermission();
+      cb();
+    }
     insight.track('plugin','compiler','watch-run');
     cb();
   });
